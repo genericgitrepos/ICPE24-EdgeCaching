@@ -1,6 +1,4 @@
 # ICPE24-EdgeCaching
-Certainly! Here's the complete content formatted as a GitHub README in Markdown:
-
 ```markdown
 # Project Installation and Running Guide
 
