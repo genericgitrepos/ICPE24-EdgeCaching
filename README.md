@@ -1,5 +1,5 @@
 # ICPE24-EdgeCaching
-```markdown
+
 # Project Installation and Running Guide
 
 This guide provides instructions on how to build and run the project.
