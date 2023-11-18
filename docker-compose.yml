@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  trafficserver:
+    build:
+      context: .
+      dockerfile: Dockerfile.trafficserver
+    volumes:
+      - ./trafficserver_configs/remap.config:/app/ats/etc/trafficserver/remap.config
+      - ./trafficserver_configs/cache.config:/app/ats/etc/trafficserver/cache.config
+      - ./trafficserver_configs/header_rewrite.config:/app/ats/etc/trafficserver/header_rewrite.config
+    ports:
+      - 8080:8080
+
+  app:
+    build: .
+    command: ./executables/app
+    expose:
+      - 5000
+    
