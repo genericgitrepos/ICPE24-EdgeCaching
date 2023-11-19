@@ -47,19 +47,15 @@ Replace `[args]` with the appropriate arguments for the simulation. The `--file-
 - `--verbose`: Enables verbose logging. If set to true, additional debug information will be printed.
 - `--rounds=`: Specifies the number of rounds for the simulation.
 - `--cache-size=`: Sets the cache size for the simulation.
-- `--hot-lower-bound=`: Sets the lower bound for hot data.
-- `--cold-lower-bound=`: Sets the lower bound for cold data.
-- `--evict-hot-for-cold`: If set to true, hot data will be evicted for cold data.
-- `--window-size=`: Sets the window size for the simulation.
-- `--learning-rate=`: Specifies the learning rate for the simulation.
-- `--features-length=`: Sets the length of the features for the simulation.
+- `--evict-hot-for-cold`: If set to true, cache-friendly object will be evicted for cache-averse object.
+- `--features-length=`: Sets the length of the features for the simulation (2 is for frequency and size, to give 30 deltas for instance you would have to set this as 32).
 - `--hazard-bandwidth=`: Specifies the hazard bandwidth for the simulation.
 - `--hazard-discrete`: If set to true, the hazard will be discrete.
-- `--future-labeling`: If set to true, future labeling will be used.
+- `--future-labeling`: If set to true, look back labeling will be used.
 - `--one-time-training`: If set to true, training will only be performed once.
 - `--max-boost-rounds=`: Specifies the maximum number of boosting rounds.
-- `--feature-frequency`: If set to true, feature frequency will be used.
-- `--feature-decayed-frequency=`: Sets the decay factor for feature frequency.
+- `--feature-frequency`: If set to true, frequency will be used in features.
+- `--feature-decayed-frequency=`: Sets the decay factor for feature decayed frequency.
 - `--feature-size`: If set to true, feature size will be used.
 - `--report-interval=`: Specifies the report interval for the simulation.
 - `--log-file=`: Specifies the name of the log file.
