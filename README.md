@@ -25,6 +25,7 @@ After installing LightGBM, you can compile the project using the following comma
 
 ```bash
 mkdir -p builds
+mkdir executables
 make hr
 ```
 
