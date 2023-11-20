@@ -62,7 +62,7 @@ Replace `[args]` with the appropriate arguments for the simulation. The `--file-
 - `--feature-frequency`: If set to true, frequency will be used in features.
 - `--feature-decayed-frequency=`: Sets the decay factor for feature decayed frequency.
 - `--feature-size`: If set to true, feature size will be used.
-- `--report-interval=`: Specifies the report interval for the simulation.
+- `--report-interval=`: Specifies the report interval for the simulation (by default this is 1 million).
 - `--log-file=`: Specifies the name of the log file.
 
 
