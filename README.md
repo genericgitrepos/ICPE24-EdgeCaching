@@ -65,6 +65,7 @@ Replace `[args]` with the appropriate arguments for the simulation. The `--file-
 - `--report-interval=`: Specifies the report interval for the simulation.
 - `--log-file=`: Specifies the name of the log file.
 
+
 ## Trace Format:
 Request traces are expected to be in a space-separated format with 3 columns:
 
