@@ -103,7 +103,7 @@ void apply_new_model(HR_Model* model) {
 }
 
 void train_hr_model(HR_Model* model, bool verbose) {
-    std::string parameters = "force_row_wise=true boosting_type=gbdt objective=regression learning_rate=0.1 num_leaves=32 max_depth=50 min_data_in_leaf=0";
+    std::string parameters = "force_row_wise=true boosting_type=gbdt objective=binary learning_rate=0.1 num_leaves=32 max_depth=50 min_data_in_leaf=0";
     if (!verbose) {
         parameters += " verbosity=-1";
     }
