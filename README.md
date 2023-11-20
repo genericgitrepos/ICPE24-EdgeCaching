@@ -69,8 +69,8 @@ Replace `[args]` with the appropriate arguments for the simulation. The `--file-
 ## Trace Format:
 Request traces are expected to be in a space-separated format with 3 columns:
 
-* time should be a long long int
-* id should be a long long int, used to uniquely identify objects
+* time (can be double)
+* id should be a uint32, used to uniquely identify objects
 * size should be uint32, this is object's size in bytes
 
 | time | id | size |
