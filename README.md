@@ -39,15 +39,19 @@ After building the project, you can run the simulation using the following comma
 ./executables/hr [args]
 ```
 
-Replace `[args]` with the appropriate arguments for the simulation. The `--file-path` argument is required and specifies the path to the file to use for the simulation.
+Replace `[args]` with the appropriate arguments for the simulation. The `--file-path` argument is required and specifies the path to the file to use for the simulation. Example:
+
+```bashe
+./executables/hr --file-path=inputs/test_big.tr --cache-size=68719476736
+```
 
 ### Additional args:
 
-- `--file-path=`: Specifies the path to the file to use for the simulation.
+- `--file-path=`: Specifies the path to the trace file to use for the simulation.
 - `--concurrency=`: Sets the concurrency level for the simulation.
 - `--verbose`: Enables verbose logging. If set to true, additional debug information will be printed.
 - `--rounds=`: Specifies the number of rounds for the simulation.
-- `--cache-size=`: Sets the cache size for the simulation.
+- `--cache-size=`: Sets the cache size in bytes for the simulation.
 - `--evict-hot-for-cold`: If set to true, cache-friendly object will be evicted for cache-averse object.
 - `--features-length=`: Sets the length of the features for the simulation (2 is for frequency and size, to give 30 deltas for instance you would have to set this as 32).
 - `--hazard-bandwidth=`: Specifies the hazard bandwidth for the simulation.
@@ -60,4 +64,15 @@ Replace `[args]` with the appropriate arguments for the simulation. The `--file-
 - `--feature-size`: If set to true, feature size will be used.
 - `--report-interval=`: Specifies the report interval for the simulation.
 - `--log-file=`: Specifies the name of the log file.
-```
+
+## Trace Format:
+Request traces are expected to be in a space-separated format with 3 columns:
+
+* time should be a long long int
+* id should be a long long int, used to uniquely identify objects
+* size should be uint32, this is object's size in bytes
+
+| time | id | size |
+|-----------------|-----------------|-----------------|
+| 1  | 1  | 140  |
+| 3  | 2  | 290  |
