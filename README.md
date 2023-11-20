@@ -42,7 +42,7 @@ After building the project, you can run the simulation using the following comma
 Replace `[args]` with the appropriate arguments for the simulation. The `--file-path` argument is required and specifies the path to the file to use for the simulation. Example:
 
 ```bashe
-./executables/hr --file-path=inputs/test_big.tr --cache-size=68719476736
+./executables/hr --file-path=inputs/wikiTrace.tr --cache-size=68719476736
 ```
 
 ### Additional args:
