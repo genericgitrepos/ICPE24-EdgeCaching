@@ -48,7 +48,6 @@ Replace `[args]` with the appropriate arguments for the simulation. The `--file-
 ### Additional args:
 
 - `--file-path=`: Specifies the path to the trace file to use for the simulation.
-- `--concurrency=`: Sets the concurrency level for the simulation.
 - `--verbose`: Enables verbose logging. If set to true, additional debug information will be printed.
 - `--rounds=`: Specifies the number of rounds for the simulation.
 - `--cache-size=`: Sets the cache size in bytes for the simulation.
